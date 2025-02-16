@@ -1,0 +1,138 @@
+// Variables
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$bg-color: #f8f9fa;
+$table-header-color: #343a40;
+$table-hover-color: #e9ecef;
+
+// Styles
+h2{
+  text-align: center;
+  font-style:oblique;
+  padding: 20px;
+}
+nav {
+  background-color: green;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  color: white;
+}
+.campaign-list-container {
+  margin-top: 2rem;
+
+  .campaign-card {
+    background-color: $bg-color;
+    border: 1px solid $secondary-color;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+
+    .campaign-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .campaign-description {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .campaign-goal {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: $primary-color;
+      margin-bottom: 1rem;
+    }
+
+    .btn-primary {
+      background-color: $primary-color;
+      border-color: $primary-color;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+        border-color: darken($primary-color, 10%);
+      }
+    }
+  }
+
+  .contribution-form {
+    background-color: $bg-color;
+    border: 1px solid $secondary-color;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    .form-control {
+      border-color: $secondary-color;
+
+      &:focus {
+        border-color: $primary-color;
+        box-shadow: 0 0 0 0.2rem rgba($primary-color, 0.25);
+      }
+    }
+
+    .btn-primary {
+      background-color: $primary-color;
+      border-color: $primary-color;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+        border-color: darken($primary-color, 10%);
+      }
+    }
+  }
+
+  .thank-you-message {
+    background-color: $bg-color;
+    border: 1px solid $secondary-color;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    padding: 1.5rem;
+    text-align: center;
+  }
+}
+
+// Responsive styles
+@media (max-width: 767px) {
+  .campaign-list-container {
+    .campaign-card {
+      padding: 1rem;
+    }
+
+    .contribution-form {
+      padding: 1rem;
+    }
+
+    .thank-you-message {
+      padding: 1rem;
+    }
+  }
+  
+}

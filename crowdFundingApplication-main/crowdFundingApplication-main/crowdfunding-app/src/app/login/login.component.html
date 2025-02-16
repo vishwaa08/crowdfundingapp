@@ -1,0 +1,54 @@
+<!-- <p>login works!</p>
+<form (ngSubmit)="login()">
+    <label for="Username">Username:</label>
+    <input typr="text" id="username" name="username" [(ngModel)]="username" required><br>
+
+    <label fro="password">Password:</label>
+    <input typr="text" id="password" name="password" [(ngModel)]="password" required><br>
+
+    <button type="submit">Login</button>
+
+    <p *ngIf="error" style="color:red">{{ error }}</p>
+</form> -->
+<!-- <div class="login-form-container">
+    <form (ngSubmit)="login()">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" [(ngModel)]="username" required class="form-control">
+      <br>
+  
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" [(ngModel)]="password" required class="form-control">
+      <br>
+  
+      <button type="submit" class="btn btn-primary">Login</button>
+  
+      <p *ngIf="error" class="error-message">{{ error }}</p>
+    </form>
+  </div> -->
+  
+
+  <div class="container bootstrap snippets bootdey">
+    <div class="row login-page"> 
+        <div class="col-md-4 col-lg-4 col-md-offset-4 col-lg-offset-4"> 
+    		<img src="https://bootdey.com/img/Content/avatar/avatar7.png" class="user-avatar img-thumbnail"> 
+    		<h1>Uplifter Funds.com</h1> 
+    		<form role="form" class="ng-pristine ng-valid" (ngSubmit)="login()"> 
+    			<div class="form-content"> 
+    				<div class="form-group"> 
+    					<input type="text" id="username" name="username" class="form-control input-underline input-lg" [(ngModel)]="username" placeholder="Username" required> 
+    				</div> 
+    				<div class="form-group"> 
+    					<input type="password" id="password" name="password" class="form-control input-underline input-lg"[(ngModel)]="password" placeholder="Password" required> 
+    				</div> 
+    			</div> 
+    			<button class="btn btn-info btn-lg" type="submit">
+                    Log in
+    			</button> &nbsp; 
+    			<!-- <a herf="/campaigns"><button type="submit" class="btn btn-info btn-lg">Register</button></a> -->
+          <a href="/register" class="register">Register</a>
+          
+                <p *ngIf="error" class="error-message">{{ error }}</p>
+    		</form> 
+    	</div> 
+    </div>
+</div>

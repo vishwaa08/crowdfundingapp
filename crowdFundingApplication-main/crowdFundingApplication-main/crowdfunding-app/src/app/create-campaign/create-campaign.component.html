@@ -1,0 +1,140 @@
+<!-- <p>create-campaign works!</p>
+
+<form (submit)="createCampagine()">
+    <label>Title:</label>
+    <input type="text" [(ngModel)]="data.title" name="title" required>
+
+    <label>Descripton:</label>
+    <textarea [(ngModel)]="data.description" name="description" required></textarea>
+
+    <label>Funding Goal:</label>
+    <textarea type="number" [(ngModel)]="data.fundingGoal" name="fundingGoal" required></textarea>
+
+    <label>End Date</label>
+    <input type="date" [(ngModel)]="data.endDate" name="endDate" required>
+
+    <label>Category</label>
+    <input type="text" [(ngModel)]="data.category" name="category" required>
+
+    <label>Creator Id</label>
+    <input type="text" [(ngModel)]="data.creator.id" name="CreatorId" required>
+
+    <button type="submit">Create Campagine</button>
+
+</form> -->
+
+<!-- <div class="container my-5 bg-image">
+  <div class="container my-5" >
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header bg-primary text-white">
+            <h3>Create Campaign</h3>
+          </div>
+          <div class="row justify-content-center p-3">
+            <h4 style="color:gray; font-weight: 1000; font-family:Verdana, sans-serif;">Welcome {{data.creator.username}} Kick start your dream project</h4>
+          </div>
+          <div class="card-body">
+            <form (submit)="createCampagine()">
+              <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" class="form-control" [(ngModel)]="data.title" name="title" required>
+              </div>
+              <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea class="form-control" [(ngModel)]="data.description" name="description" required></textarea>
+              </div>
+              <div class="form-group">
+                <label for="fundingGoal">Funding Goal:</label>
+                <input type="number" class="form-control" [(ngModel)]="data.fundingGoal" name="fundingGoal" required>
+              </div>
+              <div class="form-group">
+                <label for="endDate">End Date:</label>
+                <input type="date" class="form-control" [(ngModel)]="data.endDate" name="endDate" required>
+              </div>
+              <div class="form-group">
+                <label for="category">Category:</label>
+                <input type="text" class="form-control" [(ngModel)]="data.category" name="category" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="imageUrl">AddImageUrl:</label>
+                <input type="text" class="form-control" [(ngModel)]="data.imageUrl" name="imageUrl">
+              </div>
+              <div>
+              </div>
+              <button type="submit" class="btn btn-info">Create Campaign</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+   -->
+
+   <div>
+    <nav>
+      <ul>
+          <li><a href="/">Home</a></li>
+          <!-- <li><a href="/profile">Profile</a></li> -->
+          <li><a href="/campaigns">Campaigns</a></li>
+          <li><a href="/campaigns/create">Create Campaign</a></li>
+          <!-- <li><a href="/register">Register</a></li> -->
+          <!-- <li><a href="/login">Login</a></li> -->
+          <li><a href="/uprofile">User</a></li>
+          <li><a href="/">Logout</a></li>
+      </ul>
+  </nav>
+   </div>
+
+   <div class="container my-5 bg-image" style="background-image: url('	https://cdn.dribbble.com/users/878111/screenshots/4051521/dr_3.gif');">
+    <div class="container my-5" >
+      
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="card">
+            <div class="card-header bg-primary text-white">
+              <h3>Create Campaign</h3>
+            </div>
+            <div class="row justify-content-center p-3">
+              <h4 style="color:gray; font-weight: 1000; font-family:Verdana, sans-serif;">Welcome {{data.creator.username}} Kick start your dream project</h4>
+            </div>
+            <div class="card-body">
+              <form (submit)="createCampagine()">
+                <!-- Form fields -->
+                <div class="form-group">
+                  <label for="title">Title:</label>
+                  <input type="text" class="form-control" [(ngModel)]="data.title" name="title" required>
+                </div>
+                <div class="form-group">
+                  <label for="description">Description:</label>
+                  <textarea class="form-control" [(ngModel)]="data.description" name="description" required></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="fundingGoal">Funding Goal:</label>
+                  <input type="number" class="form-control" [(ngModel)]="data.fundingGoal" name="fundingGoal" required>
+                </div>
+                <div class="form-group">
+                  <label for="endDate">End Date:</label>
+                  <input type="date" class="form-control" [(ngModel)]="data.endDate" name="endDate" required>
+                </div>
+                <div class="form-group">
+                  <label for="category">Category:</label>
+                  <input type="text" class="form-control" [(ngModel)]="data.category" name="category" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="imageUrl">AddImageUrl:</label>
+                  <input type="text" class="form-control" [(ngModel)]="data.imageUrl" name="imageUrl">
+                </div>
+                <button type="submit" class="btn btn-info">Create Campaign</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

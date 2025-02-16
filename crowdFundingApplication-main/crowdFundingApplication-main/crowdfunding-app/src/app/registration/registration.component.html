@@ -1,0 +1,82 @@
+<!-- <p>registration works!</p>
+
+<form (submit)="registerUser()">
+    <label >User Name</label>
+    <input type="text" [(ngModel)]="formData.username" [ngModelOptions]="{standalone: true}" required>
+
+    <label>Email:</label>
+    <input type="email" [(ngModel)]="formData.email" [ngModelOptions]="{standalone: true}"  required>
+
+    <label>Password:</label>
+    <input type="password" [(ngModel)]="formData.password" [ngModelOptions]="{standalone: true}" required>
+
+    <div *ngIf="errorMessage" style="color: red;">{{ errorMessage }}</div>
+
+    <button type="submit">Register</button>
+</form> -->
+<!-- <p>registration works!</p>
+
+<form (submit)="registerUser()" class="row g-3 p-3">
+  <div class="col-md-4">
+    <label for="username" class="form-label">User Name</label>
+    <input type="text" class="form-control form-control-sm" id="username" [(ngModel)]="formData.username" [ngModelOptions]="{standalone: true}" required>
+  </div>
+  <div class="col-md-4">
+    <label for="email" class="form-label">Email:</label>
+    <input type="email" class="form-control form-control-sm" id="email" [(ngModel)]="formData.email" [ngModelOptions]="{standalone: true}" required>
+  </div>
+  <div class="col-md-4">
+    <label for="password" class="form-label">Password:</label>
+    <input type="password" class="form-control form-control-sm" id="password" [(ngModel)]="formData.password" [ngModelOptions]="{standalone: true}" required>
+  </div>
+  <div class="col-12 text-center">
+    <div *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
+  </div>
+  <div class="col-12 text-center">
+    <button type="submit" class="btn btn-primary">Register</button>
+  </div>
+</form> -->
+
+<p>Welcome! Create your account below:</p>
+
+<form (submit)="registerUser()" class="row g-3 p-3 styled-form">
+  <div class="col-md-4">
+    <label for="username" class="form-label">User Name</label>
+    <input
+      type="text"
+      class="form-control form-control-sm"
+      id="username"
+      [(ngModel)]="formData.username"
+      [ngModelOptions]="{ standalone: true }"
+      required
+    >
+  </div>
+  <div class="col-md-4">
+    <label for="email" class="form-label">Email:</label>
+    <input
+      type="email"
+      class="form-control form-control-sm"
+      id="email"
+      [(ngModel)]="formData.email"
+      [ngModelOptions]="{ standalone: true }"
+      required
+    >
+  </div>
+  <div class="col-md-4">
+    <label for="password" class="form-label">Password:</label>
+    <input
+      type="password"
+      class="form-control form-control-sm"
+      id="password"
+      [(ngModel)]="formData.password"
+      [ngModelOptions]="{ standalone: true }"
+      required
+    >
+  </div>
+  <div class="col-12 text-center">
+    <div *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
+  </div>
+  <div class="col-12 text-center">
+    <button type="submit" class="btn btn-primary">Register</button>
+  </div>
+</form>

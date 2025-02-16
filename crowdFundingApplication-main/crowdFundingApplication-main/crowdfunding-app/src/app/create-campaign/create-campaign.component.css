@@ -1,0 +1,117 @@
+/* :root {
+    --primary-color: #4CAF50;
+    --secondary-color: #FFFFFF;
+    --text-color: #333333;
+  }
+  
+  body {
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+  }
+  
+  .card {
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-header {
+    background-color: var(--primary-color);
+  }
+  
+  .form-control {
+    border-color: var(--primary-color);
+  }
+  
+  .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  
+  .btn-primary:hover {
+    background-color: #3e8e41;
+    border-color: #3e8e41;
+  } */
+
+  .bg-image {
+    /* background-image: url('	https://cdn.dribbble.com/users/878111/screenshots/4051521/dr_3.gif'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-height: 550px; 
+  
+    .card-header {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      font-family: 'Georgia', 'Times New Roman', Times, serif;
+    }
+  
+    .card-body {
+      padding: 1.5rem;
+      max-height: 400px; 
+      overflow-y: auto; 
+    }
+  }
+  
+  .form-control {
+    border-radius: 5px;
+    border-color: #ced4da;
+  
+    &:focus {
+      border-color: #22E45C;
+      box-shadow: 0 0 0 0.2rem rgba(34, 228, 92, 0.25);
+    }
+  }
+  
+  .btn-info {
+    background-color: #22E45C;
+    border-color: #22E45C;
+  
+    &:hover {
+      background-color: darken(#22E45C, 10%);
+      border-color: darken(#22E45C, 10%);
+    }
+  }
+  
+  nav {
+    background-color: green;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 1rem;
+  }
+  
+  nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  nav a:hover {
+    color: white;
+  }
+  

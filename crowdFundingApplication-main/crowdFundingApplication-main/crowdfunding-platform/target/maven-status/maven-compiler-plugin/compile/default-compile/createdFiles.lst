@@ -1,0 +1,11 @@
+com\Fullstack\crowdfunding_platform\model\Campaign.class
+com\Fullstack\crowdfunding_platform\repository\UserRepository.class
+com\Fullstack\crowdfunding_platform\model\User.class
+com\Fullstack\crowdfunding_platform\Application.class
+com\Fullstack\crowdfunding_platform\controller\UserController.class
+com\Fullstack\crowdfunding_platform\controller\GlobalExceptionHandler.class
+com\Fullstack\crowdfunding_platform\HelloImpl.class
+com\Fullstack\crowdfunding_platform\exception\ResourceNotFoundException.class
+com\Fullstack\crowdfunding_platform\HelloConsumer.class
+com\Fullstack\crowdfunding_platform\repository\CampaignRepository.class
+com\Fullstack\crowdfunding_platform\controller\CampaignController.class
